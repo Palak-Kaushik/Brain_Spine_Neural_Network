@@ -104,9 +104,21 @@ Here is the visual representation of created Brain Network, where input_layer_2 
 Best results were achieved when the activation functions were different in Brain and Spine Networks so that the patterns detected by them did not overlap and lead to overfitting. It was proved that integrating output of a smaller network into hidden layers of a larger network increased accuracy.  
 
 
+| Brain-Spine output connection | Layer Activation Functions | Accuracy Achieved in Brain Network |
+|-----------------------|-------------------|-------------------|
+| No                    | Similar           | 66.2%             |
+| Yes                   | Similar           | 62%               |
+| No                    | Different         | 88.6%             |
+| **Yes**                   | **Different**         | **90.4%**             |
+
+
+This data compares the accuracy of the Brain Network based on the activation functions used in both the Spine and Brain Networks. Accuracy of Spine network was constant at 86%.
+
+Layer Activations: Refers to whether the activation functions used in both networks (Spine and Brain) are the same or different. Accuracy Achieved: Shows the performance of the Brain Network when integrating the Spine’s output.
+
 ---
 
-## Background research
+
 
 
 [^1]: Palechor, F.M., & Manotas, A.D. (2019). Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru, and Mexico. _Data in Brief, 25._
