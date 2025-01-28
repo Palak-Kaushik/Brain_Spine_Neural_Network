@@ -1,4 +1,4 @@
-# Brain-Spine Neural Network  
+# Brain-Spine Neural Network
 Reflex Action Inspired Neural Network for Faster Inference
 
 ---
@@ -19,22 +19,32 @@ This architecture allows for efficient processing by leveraging the spine for im
 
 ## Project Structure
 
-- documentation.md: provides detailed description regarding the project
+- `documentation.md`: provides detailed description regarding the project
 
-- proving_hypothesis: this directory has file proving our assumption that adding an input of target variable which is 80% accurate in hidden layers will increase accuracy of the network
+- `proving_hypothesis`: this directory has file proving our assumption that adding an input of target variable which is 80% accurate in hidden layers will increase accuracy of the network
 
-- data_preprocessing: this directory has the original dataset "obesity.csv", which is preprocessed ans saved as "final_data.csv". the file "split_data.py" divides this data into training and testing sets
+- `data_preprocessing`: this directory has the original dataset `obesity.csv`, which is preprocessed ans saved as `final_data.csv`. the file `split_data.py` divides this data into training and testing sets
 
-- brain_spine_nn.py: this script trains and tests the final architechture of brain spine neural network which provided highest accuracy
+- `brain_spine_nn.py`: this script trains and tests the final architechture of brain spine neural network which provided highest accuracy
 
 
-### How To Run
+### How To Run  
 
-to replicate results, follow the steps:
+To replicate the results, follow these steps:  
 
-1. run the script data_preprocessing/split_data.py
-2. run the script brain_spine_nn.py
-3. The model weights are stored in spine_network.h5 and brain_network.h5
+1. **Run the data preprocessing script:**  
+   ```bash
+   python data_preprocessing/split_data.py
+   ```  
+
+2. **Run the main neural network script:**  
+   ```bash
+   python brain_spine_nn.py
+   ```  
+
+3. **The trained model weights will be saved as:**    
+     - `spine_network.h5`  
+     - `brain_network.h5`  
 
 
 ## Results
