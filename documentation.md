@@ -57,15 +57,15 @@ This dual-network architecture ensures an optimal tradeoff between speed and acc
 ## Methodology  
 
 ### Dataset  
-This project uses the **Obesity Prediction Dataset**:  
-**Palechor, F.M., & Manotas, A.D. (2019). Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru, and Mexico. _Data in Brief, 25._**  
+This project uses the **Obesity Prediction Dataset**[^1]. 
+
 
 #### Data Preprocessing  
 
 
 1. Normalization and Encoding was performed on the numerical and categorical attributes respectively.
 
-2. A "Binary" column was added, representing whether an individual has a healthy weight (`0`) or unhealthy weight (`1`).  
+2. A `Binary` column was added, representing whether an individual has a healthy weight (`0`) or unhealthy weight (`1`).  
    - **Spine NN:** Predicts the binary attribute (healthy/unhealthy).  
    - **Brain NN:** Performs multi-class classification for detailed obesity levels.  
 
@@ -107,3 +107,6 @@ Best results were achieved when the activation functions were different in Brain
 ---
 
 ## Background research
+
+
+[^1]: Palechor, F.M., & Manotas, A.D. (2019). Dataset for estimation of obesity levels based on eating habits and physical condition in individuals from Colombia, Peru, and Mexico. _Data in Brief, 25._
