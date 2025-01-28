@@ -1,4 +1,3 @@
-```markdown
 # Brain-Spine Neural Network  
 Reflex Action Inspired Neural Network for Faster Inference
 
@@ -13,6 +12,9 @@ The **Brain Spine Neural Network** architecture is inspired by biological reflex
 The output of the Spine Network is given to the hidden layers of the Brain network which increases its accuracy.
 
 This architecture allows for efficient processing by leveraging the spine for immediate, approximate results while utilizing the brain for high-precision outputs.  
+
+![brain_spine_nn](https://github.com/user-attachments/assets/572fff1a-876c-4b89-9c4c-bd4ab2fd916b)
+
 
 ### Bio-inspired elements
 
@@ -38,11 +40,11 @@ This bio-inspired design ensures that the system reacts quickly to immediate nee
 
 Advantages of the Brain Spine Neural Network:
 
-- Speed-Accuracy Tradeoff: The small, fast network can be used for applications where speed is more critical than precision (e.g., real-time decision-making). The large, accurate network can be used for tasks requiring higher precision at the cost of increased computation time.
+- **Speed-Accuracy Tradeoff**: The small, fast network can be used for applications where speed is more critical than precision (e.g., real-time decision-making). The large, accurate network can be used for tasks requiring higher precision at the cost of increased computation time.
 
-- Efficiency: By leveraging the small network, the system can handle tasks requiring lower precision with reduced energy consumption and computational cost. The larger network is reserved for cases where higher accuracy is needed, optimizing resource utilization.
+- **Efficiency**: By leveraging the small network, the system can handle tasks requiring lower precision with reduced energy consumption and computational cost. The larger network is reserved for cases where higher accuracy is needed, optimizing resource utilization.
 
-- Parallel processing: The spine and Brain networks can be optimised to execute parallely.
+- **Parallel processing**: The spine and Brain networks can be optimised to execute parallely.
 
 The Brain Spine Neural Network is highly suitable for time-sensitive applications, such as:  
 - **Autonomous Vehicles:** The spine network can detect the presence of an object quickly, while the brain network performs detailed classification and analysis of the object.  
@@ -86,6 +88,13 @@ Initially, both networks used ReLU activation in their hidden layers. In this se
 Subsequently, the Brain Network's activation functions were changed to Leaky ReLU and Tanh, so that the patterns detected by Brain and Spine networks did not overlap and thus increase accuracy. This modification improved the Brain Network's accuracy when the Spine's output was integrated.
 
 The Spine's output was tested by passing it at different points within the Brain Network—first hidden layers, middle layers, and last layers. The best performance was achieved when the Spine's output was integrated into the middle layers of the Brain Network.
+
+
+Here is the visual representation of created Brain Network, where input_layer_2 represents outputs from Spine Network
+
+<img width="921" alt="brain_network" src="https://github.com/user-attachments/assets/033acad1-f14b-497e-9ee8-c4ba28d5f977" />
+
+
 
 
 ---
