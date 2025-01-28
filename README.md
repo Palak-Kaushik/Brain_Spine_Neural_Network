@@ -1,4 +1,3 @@
-```markdown
 # Brain-Spine Neural Network  
 Reflex Action Inspired Neural Network for Faster Inference
 
@@ -12,8 +11,11 @@ The **Brain Spine Neural Network** architecture is inspired by biological reflex
 
 The output of the Spine Network is given to the hidden layers of the Brain network which increases its accuracy.
 
-This architecture allows for efficient processing by leveraging the spine for immediate, approximate results while utilizing the brain for high-precision outputs.  
----
+This architecture allows for efficient processing by leveraging the spine for immediate, approximate results while utilizing the brain for high-precision outputs. 
+
+<img width="800" alt="Brain Spine Neural Network Architecture" src="https://github.com/user-attachments/assets/42b5d5a1-73ac-47f8-bb39-bd95dfa8af9c">
+
+
 
 ## Project Structure
 
@@ -26,7 +28,7 @@ This architecture allows for efficient processing by leveraging the spine for im
 - brain_spine_nn.py: this script trains and tests the final architechture of brain spine neural network which provided highest accuracy
 
 
-### how to run
+### How To Run
 
 to replicate results, follow the steps:
 
@@ -35,7 +37,6 @@ to replicate results, follow the steps:
 3. The model weights are stored in spine_network.h5 and brain_network.h5
 
 
----
 ## Results
 Best results were achieved when the activation functions were different in Brain and Spine Networks so that the patterns detected by them did not overlap and lead to overfitting. It was proved that integrating output of a smaller network into hidden layers of a larger network increased accuracy.  
 
